@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuelas Deportivas En San Gil</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Aquí se mostrará la imagen de fondo -->
+  </div>
+  
+  <script src="script.js"></script>
+
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  background-color: #9e7575;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #fff7f7;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: rgb(156, 122, 122);
-  color: black;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
+  * {
+    box-sizing: border-box;
   }
-}
-</style>
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #a56060;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #d09090;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgb(245, 244, 244);
+    color: rgb(164, 112, 112);
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: centered;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  </style>
+  <style>
+    body {
+      background-image: url("deportes_2.jpg");
+    }
+    </style>
 </head>
 <body>
     
@@ -72,25 +98,30 @@ body {
 </div>
 
 <div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="https://indersangil.gov.co/transparencia/#">INDERSANGIL</a>
+  <a href="https://club-deportivo-real-san-gil.ueniweb.com/">Club Deportivo Real San Gil</a></a>
+  <a href="https://www.facebook.com/camilotorresnatacion/?locale=es_LA">Camilo Torres Natacion</a>
+  <a href="https://xplorercolombia.com/">Xplorer</a>
+  <a href="https://es-la.facebook.com/clubcorrecaminossangil/">Club Deportivo de Patinaje Correcaminos San Gil</a>
+  <a href="https://www.facebook.com/p/Elements-Gymnastics-Club-100064194515201/">ELEMENT'S GYMNASTICS CLUB</a>
+  <a href="https://ceamdojo.com/">Club De Enseñanzas De Artes Marciales</a>
+  <a href="https://sangilextremo.com.co/">Deportes extremos en San Gil : Adventure Xtreme</a>
 </div>
 
 <div class="row">
   <div class="INDERSANGIL">
     <h2>INDERSANGIL</h2>
     <p>De conformidad con la Ley 1712 de 2014, «Por medio de la cual se crea la Ley de Transparencia y del Derecho de Acceso a la Información Pública Nacional y se dictan otras disposiciones», se pone a disposición esta sección en la cual los ciudadanos pueden conocer de primera mano información del Instituto de deportes y recreación INDERSANGIL.</p>
-    <a href="https://indersangil.gov.co/transparencia/#">INDERSANGIL</a>
+    
 </div>
   
   <div class="Club Deportivo Real San Gil">
     <h2>Club Deportivo Real </h2>
     <p>En Club Deportivo Real San Gil ofrecemos servicios de calidad que ayudan en gran medida a garantizar que se cumplan sus requisitos. Contamos con profesionales capacitados y que tienen los conocimientos técnicos necesarios sobre el tema. </p>
-    <a href="https://club-deportivo-real-san-gil.ueniweb.com/">Club Deportivo Real Ran Gil</a>
+    
   </div>
   
-  <div class="Racing Club Santander">
+  <div class="Club Camilo Torres">
     <h2>Club Camilo Torres</h2>
     <p> El @club_natacion_camilo_torres_ Los Invita a participar de su semana vacacional de Natación del 24 al 29 Junio 2024
         Horario: 9:00 a 11:30 A.m.
@@ -102,7 +133,7 @@ body {
         Mayores Informes
         3012828734 📳
         3002051525 📳</p>
-    <a href="https://www.facebook.com/camilotorresnatacion/?locale=es_LA">INDERSANGIL</a>
+    
          <img src="img_camilo torres natatión.jpg" alt="natatión" style="width:50px;height:20px;">   
 </div>
 
@@ -119,17 +150,39 @@ body {
         Parapente en San Gil
         Prepárate para vivir una experiencia inolvidable, a tan sólo 40 minutos del casco urbano del municipio de San Gil, encontrarás uno de los mejores sitios de vuelo de nuestro país, donde podrás aventarte a cumplir ese sueño que siempre has querido lograr, VOLAR CON TOTAL SEGURIDAD.
          </p>
-    <a href="https://xplorercolombia.com/">Xplorer</a>
+    
   </div>
 
-  <div class="Club Deportivo Real San Gil">
-    <h2>Club Deportivo Real </h2>
+  <div class="Club Deportivo de Patinaje Correcaminos San Gil">
+    <h2>Club Deportivo de Patinaje Correcaminos San Gil </h2>
     <p>En Club Deportivo Real San Gil ofrecemos servicios de calidad que ayudan en gran medida a garantizar que se cumplan sus requisitos. Contamos con profesionales capacitados y que tienen los conocimientos técnicos necesarios sobre el tema. </p>
-    <a href="https://club-deportivo-real-san-gil.ueniweb.com/">Club Deportivo Real Ran Gil</a>
+    
   </div>
+  <div class="ELEMENT'S GYMNASTICS CLUB">
+    <h2>ELEMENT'S GYMNASTICS CLUB </h2>
+    <p>"Centro deportivo orientado a la enseñanza, masificación y formación en deportes de tipo gimnástico / acrobático desde tempranas edades hasta adultos. Entre las actividades que podrás realizar con nosotros destacamos gimnasia artística masculina y femenina, gimnasia de trampolin, gimnasia para crossfit, preparación física por medio del entrenamiento funcional." </p>
+    
+  </div>
+  <div class="Aventura Total ※ Deportes Extremos en San Gil">
+    <h2>Aventura Total ※ Deportes Extremos en San Gil </h2>
+    <p>Disfruta los deportes extremos en San Gil · Parapente en chicamocha · Parapente en curití · Rafting en Río Fonce · Rafting en chicamocha · Rafting en el Río Suárez. </p>
+    
+  </div>
+  <div class="Club De Enseñanzas De Artes Marciales">
+    <h2>Club De Enseñanzas De Artes Marciales </h2>
+    <p>El Club de Enseñanza de Artes Marciales CEAM, fue constituido legalmente el día 17 de mayo de 2001, ha sido creado como un punto de encuentro y capacitación para niños, jóvenes y adultos. La labor es educar al alumno en un arte que lo discipline y le enseña a canalizar la energía propia de un modo constructivo, para que viva en paz y armonía consigo mismo y con los demás. </p>
+    
+  </div>
+  <div class="Deportes extremos en San Gil : Adventure Xtreme">
+    <h2>Deportes extremos en San Gil : Adventure Xtreme </h2>
+    <p>nuestra oferta va dirigida a clientes nacionales y extranjeros con un óptimo nivel de calidad, en cada una de las actividades que ofrecemos; Rafting, Rappel, Torrentismo, Espeleología, Bungee jumping, Parapente, Paintball, Canoping etc.Cabalgata entre otros las cuales cuenta con equipos certificados, personal calificado tanto en la parte táctica como operativa y el mejor talento humano a su disposición. </p>
+    
+  </div>
+
 </div>
 
 </body>
 </html>
+
 
 
